@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kizetsu @ Asia</title>
+    <link rel="icon" type="image/x-icon" href="images/26d3.svg">
+
+    <script src="https://kit.fontawesome.com/5937404bf8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        VANTA.BIRDS({
+            el: "#vanta",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0x0,
+            color1: 0xffffff,
+            color2: 0x0,
+            birdSize: 1.10,
+            wingSpan: 15.00,
+            speedLimit: 6.00,
+            separation: 24.00,
+            alignment: 26.00,
+            cohesion: 11.00,
+            quantity: 4.00,
+            backgroundAlpha: 0.0
+        })
+       
+        setTimeout(() => {
+            const main = document.querySelector('main')
+            main.style.opacity = 1
+            main.style.filter = 'blur(0px)' 
+        }, 800)
+    })
+    </script>
+</head>
+<body>
+    <div id="vanta"></div>
+    <main class="animated">
+        <header>
+            <img src="images/tumblr_eadcbab1342aa97bfc7da119f1c05c86_ea7afadb_500.png" alt="">
+            <h1>@kizetsu</h1>
+        </header>
+        <ul>
+            <li>
+                <a href="https://soundcloud.com/k1zetsu/">
+                    <i class="fa-brands fa-soundcloud"></i>
+                    Soundcloud
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/kizetsu_/?hl=en">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    Instagram
+                </a>
+            </li>
+            <li>
+                <a href="https://open.spotify.com/artist/6T6U1SxcSb8va9BiAcA1hk">
+                    <i class="fa-brands fa-spotify"></i>
+                    Spotify
+                </a>
+            </li>
+            <li>
+                <a href="https://kizetsu.bandcamp.com/">
+                    <i class="fa-brands fa-bandcamp"></i>
+                    Bandcamp
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/hellokizetsu">
+                    <i class="fa-brands fa-twitter"></i>
+                    Twitter
+                </a>
+            </li>
+            <li>
+                <a href="mailto:kizetsu@asia.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    Mail
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: gray;
+    color: #fff;
+    background: url(./images/DSC_1672.JPG) no-repeat center center fixed;
+    background-size: cover;
+}
+
+main {
+    position: relative;
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+}
+
+#vanta {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+header {
+    margin-top: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > img {
+    z-index: 1;
+    position: relative;
+    width: 10em;
+    border-radius: 100%;
+    box-shadow: black 0px 2px 20px 0px;
+}
+
+header > h1 {
+    background-color: rgba(48, 48, 48, 0.315);
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 1.4em;
+    color: #fff;
+    padding: 0.3em 0.7em;
+    /* box-shadow: black 0px 2px 8px 0px; */
+    box-shadow: rgba(16, 18, 51, 0.24) 0px 2px 8px 0px;
+    backdrop-filter: blur(10px) saturate(100%) contrast(100%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(100%);
+}
+
+ul {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+    max-width: 480px;
+}
+
+ul > li {
+    background-color: rgba(48, 48, 48, 0.502);
+    backdrop-filter: blur(10px) saturate(160%) contrast(100%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(100%);
+    border-radius: 10em;
+    padding: 1em;
+    margin: 1.4em 0;
+    box-shadow: rgba(28 32 93 / 24%) 0px 2px 8px 0px;
+}
+
+ul > li > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
