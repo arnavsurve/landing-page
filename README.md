@@ -1,6 +1,6 @@
 # landing-page
 Landing page with links for my music socials.
-Interactive JS background sourced with VantaJS.
+Interactive JS animations sourced with VantaJS.
 
 https://arnavsurve.github.io/landing-page/
 
